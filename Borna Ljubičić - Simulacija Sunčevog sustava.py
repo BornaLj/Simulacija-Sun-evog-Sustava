@@ -158,7 +158,7 @@ def main():							#glavna funkcija za prikaz orbita
 
 		for planet in planeti:
 			planet.update_position(planeti)
-			udaljenost_zemlja.append(zemlja.distance_to_sun/Planet.AU)
+			udaljenost_zemlja.append(zemlja.distance_to_sun/Planet.AU)		#bilježenje Zemljine udaljenosti od Sunca
 			time2 = (time.time()-time1)/omjer		#pretvorba u sekunde
 			time2 = time2/2628000 					#pretvorba u mjesece
 			vremena.append(time2)
