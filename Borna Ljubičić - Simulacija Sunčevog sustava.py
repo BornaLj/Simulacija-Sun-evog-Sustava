@@ -222,7 +222,7 @@ def main():							#glavna funkcija za prikaz orbita
 		t1 = 0
 		keys = pygame.key.get_pressed()						#provjera je li pritisnut SPACEBAR da se promijeni SCALE simulacije
 		if keys[pygame.K_SPACE] and time.time()-t1 > 2.5:
-			t1 =time.time()
+			time.sleep(0.1)
 			promjeni_veličinu()
 		elif keys[pygame.K_ESCAPE]:
 			menu_1()
